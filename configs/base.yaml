@@ -1,0 +1,40 @@
+name: base_experiment
+seed: 42
+
+data:
+  dataset_root: data/raw/chest_xray
+  train_splits: [train, val]
+  test_splits: [test]
+  image_size: 224
+  batch_size: 32
+  num_workers: 2
+  val_size: 0.15
+  viral_weight_multiplier: 1.3
+
+optimizer:
+  name: adam
+  lr: 0.0005
+  weight_decay: 0.0001
+
+training:
+  epochs: 30
+  patience: 7
+  device: auto
+
+model:
+  name: cnn
+  num_classes: 3
+  freeze_backbone: false
+  finetune_blocks: []
+  patch_size: 16
+  embed_dim: 256
+  hidden_size: 512
+  num_layers: 2
+  dropout: 0.2
+
+output:
+  root_dir: outputs/runs
+  experiment_name: base_experiment
+  save_figures: true
+  save_checkpoints: true
+

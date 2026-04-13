@@ -1,0 +1,10 @@
+base_config: base.yaml
+name: a_custom_cnn
+
+training:
+  epochs: 40
+  patience: 10
+
+model:
+  name: cnn
+

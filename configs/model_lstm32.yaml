@@ -1,0 +1,11 @@
+base_config: base.yaml
+name: c2_patch_lstm_32
+
+training:
+  epochs: 60
+  patience: 12
+
+model:
+  name: patch_lstm
+  patch_size: 32
+

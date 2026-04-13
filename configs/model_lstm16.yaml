@@ -1,0 +1,11 @@
+base_config: base.yaml
+name: c1_patch_lstm_16
+
+training:
+  epochs: 60
+  patience: 12
+
+model:
+  name: patch_lstm
+  patch_size: 16
+

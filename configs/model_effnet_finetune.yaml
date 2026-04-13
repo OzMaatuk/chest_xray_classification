@@ -1,0 +1,15 @@
+base_config: base.yaml
+name: b2_finetuned_efficientnet
+
+optimizer:
+  lr: 0.0001
+
+training:
+  epochs: 25
+  patience: 8
+
+model:
+  name: efficientnet
+  freeze_backbone: true
+  finetune_blocks: [7, 8]
+
