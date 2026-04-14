@@ -14,13 +14,25 @@ pip install -r requirements.txt
 
 2. Place the Kaggle dataset at `data/raw/chest_xray/`
 
-3. Run an experiment:
+3. Validate the local dataset:
+
+```bash
+python3 prepare.py
+```
+
+4. Run an experiment:
 
 ```bash
 PYTHONPATH=src python3 experiments/run_experiment.py --config configs/model_cnn.yaml
 ```
 
-4. Inspect artifacts in `outputs/runs/<experiment_name>/`
+Or use the thin compatibility wrapper:
+
+```bash
+python3 train.py --config configs/model_cnn.yaml
+```
+
+5. Inspect artifacts in `outputs/runs/<experiment_name>/`
 
 ## Available experiment configs
 
@@ -33,5 +45,6 @@ PYTHONPATH=src python3 experiments/run_experiment.py --config configs/model_cnn.
 ## Notes
 
 - The original notebook and script are kept as source material, but the new CLI workflow should be the primary path for future work.
+- `prepare.py` validates the local Kaggle image dataset. It is not a tokenizer/sharding script like the one used in text-model AutoResearch examples.
+- `program.md` defines the custom AutoResearch contract for this repository.
 - Full runs require PyTorch, torchvision, scikit-learn, matplotlib, seaborn, pandas, and Pillow.
-

@@ -1,39 +1,68 @@
-# AutoResearch Migration Notes
+# AutoResearch Notes
 
-This repository has been reshaped from a single notebook-export script into a small config-driven project so an automated research loop can operate on it.
+This repository is compatible with AutoResearch in an adapted form.
 
-## What changed
+## Important clarification
 
-- Training now has a single CLI entry point: `experiments/run_experiment.py`
-- Experiments are defined by YAML files in `configs/`
-- Reusable code lives under `src/chest_xray_project/`
-- Each run writes its own config, metrics, checkpoint, and figures to `outputs/runs/<experiment_name>/`
+The canonical `prepare.py` + `train.py` AutoResearch template comes from language-model projects that build tokenizers and binary shards. This chest X-ray repository uses a local Kaggle image dataset, so that exact contract does not apply directly.
 
-## Why this fits AutoResearch better
+`prepare.py` is therefore not useless, but it serves a different role here:
 
-AutoResearch-style agents need a stable command they can rerun while changing only configuration. The new workflow is:
+- validate that the Kaggle dataset is present locally
+- verify the expected folder structure
+- inspect label balance
+- write a small stable preparation report
 
-1. Choose or modify a config file
-2. Run one experiment
-3. Read `metrics.json`
-4. Compare outputs
-5. Propose the next experiment
-
-## Suggested agent loop
+The experiment entry point remains:
 
 ```bash
-python3 experiments/run_experiment.py --config configs/model_effnet_frozen.yaml
-python3 experiments/run_experiment.py --config configs/model_effnet_finetune.yaml
+PYTHONPATH=src python3 experiments/run_experiment.py --config configs/model_cnn.yaml
 ```
 
-## Remaining manual step
+## Current workflow
 
-The dataset still needs to exist at `data/raw/chest_xray/` with the Kaggle folder structure:
+1. Run dataset validation:
+
+```bash
+python3 prepare.py
+```
+
+2. Launch a config-driven experiment:
+
+```bash
+PYTHONPATH=src python3 experiments/run_experiment.py --config configs/model_effnet_frozen.yaml
+```
+
+3. Inspect run outputs:
 
 ```text
-data/raw/chest_xray/
-  train/
-  val/
-  test/
+outputs/runs/<experiment_name>/
 ```
 
+## What AutoResearch should treat as fixed vs variable
+
+Fixed:
+
+- `prepare.py`
+- reusable package code unless you intentionally decide to research code changes
+- dataset location and label mapping contract
+
+Variable:
+
+- `configs/*.yaml`
+- model choice
+- optimizer settings
+- patch size
+- fine-tuning depth
+- training hyperparameters
+
+## Why this is still a good fit
+
+AutoResearch still gets the same outer-loop benefits:
+
+- stable CLI execution
+- saved metrics per run
+- reproducible config files
+- comparable artifacts across experiments
+
+The main difference is that this repo is centered around a config-driven image pipeline rather than a tiny `train.py`-only loop.
