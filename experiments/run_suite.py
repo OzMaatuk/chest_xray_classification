@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -15,6 +16,9 @@ def parse_args():
 def main():
     args = parse_args()
     root = Path(__file__).resolve().parents[1]
+    env = dict(os.environ)
+    src_path = str(root / "src")
+    env["PYTHONPATH"] = src_path if not env.get("PYTHONPATH") else f"{src_path}:{env['PYTHONPATH']}"
 
     for config in args.configs:
         print(f"Running {config}")
@@ -22,9 +26,9 @@ def main():
             [sys.executable, str(root / "experiments" / "run_experiment.py"), "--config", config],
             check=True,
             cwd=root,
+            env=env,
         )
 
 
 if __name__ == "__main__":
     main()
-

@@ -34,6 +34,10 @@ python3 train.py --config configs/model_cnn.yaml
 
 5. Inspect artifacts in `outputs/runs/<experiment_name>/`
 
+## Colab
+
+The preferred Colab workflow is [notebooks/colab_experiment_suite.ipynb](/home/oz/Workspace/aya/notebooks/colab_experiment_suite.ipynb:1).
+
 ## Available experiment configs
 
 - `configs/model_cnn.yaml`
