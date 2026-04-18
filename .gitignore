@@ -5,3 +5,5 @@ outputs/runs/*
 !outputs/runs/.gitkeep
 old/
 .kaggle/
+data/
+results.tsv

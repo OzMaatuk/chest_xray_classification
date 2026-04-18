@@ -15,7 +15,7 @@ class DataConfig:
     image_size: int = 224
     batch_size: int = 32
     num_workers: int = 2
-    val_size: float = 0.15
+    val_size: float = 0.20
     seed: int = 42
     viral_weight_multiplier: float = 1.3
 
@@ -94,4 +94,3 @@ def load_config(config_path: str | Path) -> ExperimentConfig:
         model=ModelConfig(**raw.get("model", {})),
         output=OutputConfig(**raw.get("output", {})),
     )
-
