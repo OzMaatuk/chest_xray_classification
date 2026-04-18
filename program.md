@@ -87,10 +87,10 @@ Secondary considerations:
 - avoiding unnecessary memory growth
 
 **Target Benchmarks (Test Accuracy):**
-**Stage A (CNN Baseline):** ~68%[cite: 311, 358].
-**Stage B1 (Frozen EfficientNetB0):** ~78%[cite: 367, 405].
-**Stage B2 (Fine-Tuning):** ~79.6%[cite: 414, 451].
-**Stage C (Vision Transformer):** ~75%[cite: 460, 490].
+**Stage A (CNN Baseline):** ~68%.
+**Stage B1 (Frozen EfficientNetB0):** ~78%.
+**Stage B2 (Fine-Tuning):** ~79.6%.
+**Stage C (Vision Transformer):** ~75%.
 
 ## Experiment Roadmap
 
