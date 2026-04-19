@@ -1,0 +1,65 @@
+[c2_patch_lstm_32] Epoch 01/60 | Train 1.0893/0.3362 | Val 1.1075/0.3438 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 02/60 | Train 0.9812/0.4545 | Val 0.8876/0.5731 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 03/60 | Train 0.8606/0.5415 | Val 0.7623/0.5941 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 04/60 | Train 0.7865/0.5728 | Val 0.7599/0.5721 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 05/60 | Train 0.7554/0.6098 | Val 0.7254/0.6313 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 06/60 | Train 0.7199/0.6272 | Val 0.7306/0.5549 | Patience 1/12
+[c2_patch_lstm_32] Epoch 07/60 | Train 0.7167/0.6306 | Val 0.6801/0.6323 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 08/60 | Train 0.6931/0.6507 | Val 0.6757/0.5731 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 09/60 | Train 0.6965/0.6507 | Val 0.6773/0.6504 | Patience 1/12
+[c2_patch_lstm_32] Epoch 10/60 | Train 0.6831/0.6573 | Val 0.6303/0.6552 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 11/60 | Train 0.6600/0.6796 | Val 0.7130/0.5989 | Patience 1/12
+[c2_patch_lstm_32] Epoch 12/60 | Train 0.6583/0.6736 | Val 0.5995/0.6934 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 13/60 | Train 0.6557/0.6746 | Val 0.5668/0.7058 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 14/60 | Train 0.6480/0.6836 | Val 0.6670/0.7135 | Patience 1/12
+[c2_patch_lstm_32] Epoch 15/60 | Train 0.6395/0.6975 | Val 0.6163/0.6963 | Patience 2/12
+[c2_patch_lstm_32] Epoch 16/60 | Train 0.6205/0.6958 | Val 0.5847/0.6638 | Patience 3/12
+[c2_patch_lstm_32] Epoch 17/60 | Train 0.6221/0.6956 | Val 0.6366/0.6867 | Patience 4/12
+[c2_patch_lstm_32] Epoch 18/60 | Train 0.5942/0.7094 | Val 0.5481/0.7278 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 19/60 | Train 0.6002/0.7059 | Val 0.6822/0.6839 | Patience 1/12
+[c2_patch_lstm_32] Epoch 20/60 | Train 0.5998/0.7078 | Val 0.5567/0.7049 | Patience 2/12
+[c2_patch_lstm_32] Epoch 21/60 | Train 0.5898/0.7140 | Val 0.5436/0.7221 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 22/60 | Train 0.5981/0.7180 | Val 0.5471/0.7135 | Patience 1/12
+[c2_patch_lstm_32] Epoch 23/60 | Train 0.5932/0.7204 | Val 0.5659/0.7096 | Patience 2/12
+[c2_patch_lstm_32] Epoch 24/60 | Train 0.5837/0.7157 | Val 0.5638/0.6896 | Patience 3/12
+[c2_patch_lstm_32] Epoch 25/60 | Train 0.5636/0.7345 | Val 0.5346/0.7498 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 26/60 | Train 0.5821/0.7185 | Val 0.6034/0.7469 | Patience 1/12
+[c2_patch_lstm_32] Epoch 27/60 | Train 0.5704/0.7278 | Val 0.5692/0.7173 | Patience 2/12
+[c2_patch_lstm_32] Epoch 28/60 | Train 0.5566/0.7338 | Val 0.5344/0.7068 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 29/60 | Train 0.5717/0.7195 | Val 0.5697/0.7192 | Patience 1/12
+[c2_patch_lstm_32] Epoch 30/60 | Train 0.5675/0.7317 | Val 0.5809/0.7144 | Patience 2/12
+[c2_patch_lstm_32] Epoch 31/60 | Train 0.5569/0.7281 | Val 0.6094/0.7096 | Patience 3/12
+[c2_patch_lstm_32] Epoch 32/60 | Train 0.5540/0.7345 | Val 0.5592/0.6953 | Patience 4/12
+[c2_patch_lstm_32] Epoch 33/60 | Train 0.5518/0.7395 | Val 0.5751/0.7307 | Patience 5/12
+[c2_patch_lstm_32] Epoch 34/60 | Train 0.5621/0.7278 | Val 0.5077/0.7517 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 35/60 | Train 0.5506/0.7333 | Val 0.5867/0.6552 | Patience 1/12
+[c2_patch_lstm_32] Epoch 36/60 | Train 0.5555/0.7290 | Val 0.5342/0.7192 | Patience 2/12
+[c2_patch_lstm_32] Epoch 37/60 | Train 0.5461/0.7362 | Val 0.5342/0.7077 | Patience 3/12
+[c2_patch_lstm_32] Epoch 38/60 | Train 0.5423/0.7407 | Val 0.6270/0.6724 | Patience 4/12
+[c2_patch_lstm_32] Epoch 39/60 | Train 0.5517/0.7348 | Val 0.5241/0.7068 | Patience 5/12
+[c2_patch_lstm_32] Epoch 40/60 | Train 0.5500/0.7376 | Val 0.5436/0.7173 | Patience 6/12
+[c2_patch_lstm_32] Epoch 41/60 | Train 0.5312/0.7417 | Val 0.5456/0.7154 | Patience 7/12
+[c2_patch_lstm_32] Epoch 42/60 | Train 0.5346/0.7448 | Val 0.5014/0.7335 | Patience 0/12 *
+[c2_patch_lstm_32] Epoch 43/60 | Train 0.5329/0.7441 | Val 0.5710/0.6734 | Patience 1/12
+[c2_patch_lstm_32] Epoch 44/60 | Train 0.5275/0.7400 | Val 0.5595/0.7173 | Patience 2/12
+[c2_patch_lstm_32] Epoch 45/60 | Train 0.5324/0.7510 | Val 0.5212/0.7335 | Patience 3/12
+[c2_patch_lstm_32] Epoch 46/60 | Train 0.5364/0.7467 | Val 0.5628/0.7058 | Patience 4/12
+[c2_patch_lstm_32] Epoch 47/60 | Train 0.5205/0.7486 | Val 0.5913/0.7020 | Patience 5/12
+[c2_patch_lstm_32] Epoch 48/60 | Train 0.5402/0.7372 | Val 0.5289/0.7144 | Patience 6/12
+[c2_patch_lstm_32] Epoch 49/60 | Train 0.5339/0.7415 | Val 0.5440/0.7316 | Patience 7/12
+[c2_patch_lstm_32] Epoch 50/60 | Train 0.5155/0.7501 | Val 0.5433/0.6628 | Patience 8/12
+[c2_patch_lstm_32] Epoch 51/60 | Train 0.5223/0.7458 | Val 0.5829/0.6380 | Patience 9/12
+[c2_patch_lstm_32] Epoch 52/60 | Train 0.5173/0.7539 | Val 0.5506/0.6648 | Patience 10/12
+[c2_patch_lstm_32] Epoch 53/60 | Train 0.5270/0.7551 | Val 0.5441/0.7087 | Patience 11/12
+[c2_patch_lstm_32] Epoch 54/60 | Train 0.5038/0.7632 | Val 0.5807/0.6991 | Patience 12/12
+Early stopping at epoch 54.
+Finished experiment 'c2_patch_lstm_32'. Outputs saved to outputs/runs/c2_patch_lstm_32
+---
+output_dir:         /home/aya555levi/chest_xray_classification/outputs/runs/c2_patch_lstm_32
+val_macro_f1:       0.740616
+val_accuracy:       0.733524
+test_macro_f1:      0.749126
+test_accuracy:      0.754808
+training_seconds:   2592.0
+num_params:         4531301
+trainable_params:   4531301

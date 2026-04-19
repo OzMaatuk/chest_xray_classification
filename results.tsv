@@ -1,0 +1,7 @@
+commit	val_accuracy	test_accuracy	status	description
+ac9f370	0.000000	0.000000	crash	Stage A CNN baseline crashed before training due to missing sklearn dependency
+ac9f370	0.000000	0.000000	crash	Stage A CNN baseline aborted from CUDA cublas library path conflict
+ac9f370	0.767908	0.783654	keep	Stage A CNN baseline with 80/20 combined train-val split
+ac9f370	0.741165	0.786859	keep	Stage B1 frozen EfficientNetB0 transfer baseline
+ac9f370	0.734479	0.834936	keep	Stage B2 EfficientNetB0 fine-tuning blocks 7-8 at lr 1e-5
+ac9f370	0.733524	0.754808	keep	Stage C existing 32x32 patch LSTM proxy for ViT-style patch experiment
