@@ -6,4 +6,3 @@ outputs/runs/*
 old/
 .kaggle/
 data/
-results.tsv
