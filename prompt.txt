@@ -1,0 +1,8 @@
+	Hi have a look at program.md and let's kick off a new experiment! let's do the setup first.
+  This runs on Google Cloud VM.
+  Finish means you got the Target Benchmarks results as mentioned in program.md, or you got to point where no improvment is working and you made too much expiriences without improvments.
+  Make things as simple as you can and follow the program.md instruction correctly.
+  You can fix source code as you want but need to stick with the existing models.
+	When finish,
+  Create research summery report of all the research made with all step from the conversation.
+  You should put everything in .ipynb file inspiered by the file located in 'notebooks/chest_xray_classification.ipynb', with proper graphs, diagrams, tables, plots, for all important details.
