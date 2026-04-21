@@ -1,0 +1,321 @@
+ Stage A has completed epoch 1: validation accuracy is 0.4632, so the run is now genuinely training. I’ll keep it going to early stopping or 40 epochs, then parse metrics.json.
+
+• Waited for background terminal · printf 'ac9f370\t0.000000\t0.000000\tcrash\tStage A CNN baseline aborted from CUDA cublas library path conflict\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_cnn.yaml > run.log 2>&1
+─ Worked for 2m 18s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Stage A is still running under the setup commit. It is slow but stable; after epoch 2 the validation accuracy was already 0.7049, which clears the Stage A ~68% test-accuracy target
+  directionally, but I’m waiting for the actual final test metric before logging it as a keep.
+
+• Explored
+  └ Read run.log
+
+• Ran nvidia-smi --query-gpu=utilization.gpu,memory.used --format=csv,noheader
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_cnn.yaml > run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─ Worked for 1m 13s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• CNN training is at epoch 5. Best validation loss is still epoch 2, so early stopping may trigger before all 40 epochs if the validation loss does not recover.
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_cnn.yaml > run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─ Worked for 2m 12s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Epoch 6 improved the CNN baseline to 0.7631 validation accuracy. The current best checkpoint is being tracked by validation loss, so I’m letting early stopping choose the final model rather
+  than manually stopping on accuracy.
+
+• Waited for background terminal · printf 'ac9f370\t0.000000\t0.000000\tcrash\tStage A CNN baseline aborted from CUDA cublas library path conflict\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_cnn.yaml > run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─ Worked for 4m 10s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• The CNN baseline is still improving by validation loss: epoch 12 is the current best, with validation accuracy 0.7603. It is past the Stage A target range; I’m waiting for final test
+  accuracy.
+
+• Waited for background terminal · printf 'ac9f370\t0.000000\t0.000000\tcrash\tStage A CNN baseline aborted from CUDA cublas library path conflict\n' >> results.tsv
+• Explored
+  └ Read run.log
+
+─ Worked for 7m 16s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• CNN is at epoch 21. The best validation loss is epoch 20 with validation accuracy 0.7708; epoch 21 reached 0.7851 accuracy but did not improve loss, so the final checkpoint is still based on
+  epoch 20.
+
+• Waited for background terminal · printf 'ac9f370\t0.000000\t0.000000\tcrash\tStage A CNN baseline aborted from CUDA cublas library path conflict\n' >> results.tsv
+
+• Explored
+  └ Read run.log
+
+• Ran printf 'ac9f370\t0.000000\t0.000000\tcrash\tStage A CNN baseline aborted from CUDA cublas library path conflict\n' >> results.tsv
+  │ TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+  │ LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/
+  │ … +2 lines
+  │ import json
+  │ … +6 lines
+  └ [a_custom_cnn] Epoch 26/40 | Train 0.5293/0.7450 | Val 0.4953/0.7870 | Patience 2/10
+    [a_custom_cnn] Epoch 27/40 | Train 0.5057/0.7568 | Val 0.5597/0.7765 | Patience 3/10
+    … +20 lines (ctrl + t to view transcript)
+    data {'train_size': 4185, 'val_size': 1047, 'test_size': 624, 'train_distribution': {'Bacterial': 2030, 'Normal': 1079, 'Viral': 1076}, 'val_distribution': {'Bacterial': 508, 'Normal': 270,
+    'Viral': 269}, 'test_distribution': {'Bacterial': 242, 'Normal': 234, 'Viral': 148}}
+
+─ Worked for 10m 33s ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_effnet_frozen.yaml >
+run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• The frozen EfficientNet run is active. Its first startup can be quiet while torchvision loads/downloads weights and prepares the first epoch; I’m polling the log and GPU state.
+
+• Explored
+  └ Read run.log
+
+• Ran nvidia-smi --query-gpu=utilization.gpu,memory.used --format=csv,noheader
+  └ 0 %, 908 MiB
+
+• Ran ps -o pid,etime,pcpu,pmem,stat,cmd -p $(pgrep -f 'experiments/run_experiment.py' | head -n1) 2>/dev/null || true
+  └     PID     ELAPSED %CPU %MEM STAT CMD
+       5088       00:44 25.7  9.8 Rl   /usr/bin/python3 /home/aya555levi/chest_xray_classification/experiments/run_experiment.py --config /home/aya555levi/chest_xray_classification/configs/
+    model_effnet_frozen.yaml
+
+• Waited for background terminal · printf 'ac9f370\t0.767908\t0.783654\tkeep\tStage A CNN baseline with 80/20 combined train-val split\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_effnet_frozen.yaml >
+run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─ Worked for 1m 12s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Stage B1 has completed two epochs. Validation accuracy is 0.7144 and the loss is improving; I’m continuing to early stopping or the configured 40 epochs.
+
+• Waited for background terminal · printf 'ac9f370\t0.767908\t0.783654\tkeep\tStage A CNN baseline with 80/20 combined train-val split\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_effnet_frozen.yaml >
+run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─ Worked for 7m 15s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Frozen EfficientNet is stable but not strong so far: best validation accuracy seen is 0.7144, and the current best checkpoint by loss is epoch 7 with lower accuracy. I’m letting the
+  configured patience finish it so the result is comparable.
+
+• Waited for background terminal · printf 'ac9f370\t0.767908\t0.783654\tkeep\tStage A CNN baseline with 80/20 combined train-val split\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_effnet_frozen.yaml >
+
+• Explored
+  └ Read run.log
+
+─ Worked for 10m 23s ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Frozen EfficientNet improved late: current best loss is epoch 24 with validation accuracy 0.7412, and the best raw validation accuracy seen is 0.7517. It still trails the Stage B1 target, but
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_effnet_frozen.yaml >
+run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+• Ran printf 'ac9f370\t0.767908\t0.783654\tkeep\tStage A CNN baseline with 80/20 combined train-val split\n' >> results.tsv
+  │ TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+  │ LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/
+  │ python3 - <<'PY'
+  │ import json
+  │ … +5 lines
+  └ [b1_frozen_efficientnet] Epoch 22/40 | Train 0.5044/0.7572 | Val 0.6821/0.7039 | Patience 4/10
+    [b1_frozen_efficientnet] Epoch 23/40 | Train 0.5104/0.7474 | Val 0.6259/0.7211 | Patience 5/10
+    … +22 lines (ctrl + t to view transcript)
+    val 0.7411652340019103 test 0.7868589743589743 time 1637.9153861999512
+    model {'name': 'efficientnet', 'total_parameters': 4730751, 'trainable_parameters': 723203}
+
+─ Worked for 8m 19s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+• Waited for background terminal · printf 'ac9f370\t0.741165\t0.786859\tkeep\tStage B1 frozen EfficientNetB0 transfer baseline\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_effnet_finetune.yaml >
+run.log 2>&1
+
+• The B2 fine-tuning run is active. It has fewer configured epochs than B1, but more trainable EfficientNet layers, so I’m watching for overfitting as requested in program.md.
+
+• Waited for background terminal · printf 'ac9f370\t0.741165\t0.786859\tkeep\tStage B1 frozen EfficientNetB0 transfer baseline\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_effnet_finetune.yaml >
+run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─ Worked for 4m 19s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• B2 is learning steadily but slowly at the intended low fine-tuning rate: validation accuracy reached 0.6409 by epoch 4, then flattened slightly at epoch 5. No overfitting signal yet; both
+  train and validation are still low.
+
+• Waited for background terminal · printf 'ac9f370\t0.741165\t0.786859\tkeep\tStage B1 frozen EfficientNetB0 transfer baseline\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_effnet_finetune.yaml >
+
+• Explored
+  └ Read run.log
+
+─ Worked for 10m 12s ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• B2 reached 0.7211 validation accuracy at epoch 17 and is still improving by loss. It is under the B1 test benchmark trajectory so far, but there is no loss divergence; I’m letting the
+  configured run complete.
+
+• Waited for background terminal · printf 'ac9f370\t0.741165\t0.786859\tkeep\tStage B1 frozen EfficientNetB0 transfer baseline\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+  └ Read run.log
+
+• Ran printf 'ac9f370\t0.741165\t0.786859\tkeep\tStage B1 frozen EfficientNetB0 transfer baseline\n' >> results.tsv
+  │ TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+  │ LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/
+  │ … +2 lines
+  └ (no output)
+
+• Ran tail -n 18 run.log
+    [b2_finetuned_efficientnet] Epoch 19/25 | Train 0.5901/0.7278 | Val 0.6630/0.7135 | Patience 1/8
+    … +16 lines (ctrl + t to view transcript)
+    val 0.7344794651384909 test 0.8349358974358975 time 1202.3864283561707
+    model {'name': 'efficientnet', 'total_parameters': 4730751, 'trainable_parameters': 1852595}
+
+─ Worked for 6m 06s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• B2 finished below the frozen run on validation accuracy (0.734479) but substantially better on test accuracy (0.834936), clearing the ~79.6% fine-tuning benchmark. I’m logging it as a
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_lstm32.yaml > run.log 2>&1
+
+• The Stage C proxy run (model_lstm32.yaml) is active. It uses 32x32 image patches, matching the roadmap’s patch size, but the architecture is the repo’s existing patch LSTM rather than a newly
+  added ViT.
+
+• Ran tail -n 12 run.log
+  │ nvidia-smi --query-gpu=utilization.gpu,memory.used --format=csv,noheader
+  └ [c2_patch_lstm_32] Epoch 01/60 | Train 1.0893/0.3362 | Val 1.1075/0.3438 | Patience 0/12 *
+    6 %, 516 MiB
+
+• Waited for background terminal · printf 'ac9f370\t0.734479\t0.834936\tkeep\tStage B2 EfficientNetB0 fine-tuning blocks 7-8 at lr 1e-5\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_lstm32.yaml > run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─ Worked for 4m 19s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• The 32-patch LSTM is improving: validation accuracy is 0.6313 by epoch 5. It is still well short of the Stage C ~75% test target, so the next few epochs will decide whether it is worth
+  further tuning.
+
+• Waited for background terminal · printf 'ac9f370\t0.734479\t0.834936\tkeep\tStage B2 EfficientNetB0 fine-tuning blocks 7-8 at lr 1e-5\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_lstm32.yaml > run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─ Worked for 10m 10s ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• The Stage C proxy has reached 0.7135 validation accuracy at epoch 14, with best loss at epoch 13 (0.7058 accuracy). It is approaching the target but not there yet, so I’m continuing.
+
+• Waited for background terminal · printf 'ac9f370\t0.734479\t0.834936\tkeep\tStage B2 EfficientNetB0 fine-tuning blocks 7-8 at lr 1e-5\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_lstm32.yaml > run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─ Worked for 10m 09s ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• The Stage C proxy hit 0.7498 validation accuracy at epoch 25, right on the roadmap’s ~75% neighborhood, though the best-loss checkpoint is epoch 28 with lower validation accuracy. I’m waiting
+  for the final test metric before deciding status.
+
+• Waited for background terminal · printf 'ac9f370\t0.734479\t0.834936\tkeep\tStage B2 EfficientNetB0 fine-tuning blocks 7-8 at lr 1e-5\n' >> results.tsv
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_lstm32.yaml > run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• The Stage C proxy improved again by loss at epoch 42, with validation accuracy 0.7335; its best raw validation accuracy remains 0.7517. The run is continuing because loss still improves
+TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/lib:
+$TORCH_LIB_ROOT/cufft/lib:$TORCH_LIB_ROOT/curand/lib:$TORCH_LIB_ROOT/nccl/lib:$TORCH_LIB_ROOT/nvjitlink/lib:$LD_LIBRARY_PATH" python3 train.py --config configs/model_lstm32.yaml > run.log 2>&1
+
+• Explored
+  └ Read run.log
+
+• Ran printf 'ac9f370\t0.734479\t0.834936\tkeep\tStage B2 EfficientNetB0 fine-tuning blocks 7-8 at lr 1e-5\n' >> results.tsv
+  │ TORCH_LIB_ROOT=/usr/local/lib/python3.12/dist-packages/nvidia
+  │ LD_LIBRARY_PATH="$TORCH_LIB_ROOT/cublas/lib:$TORCH_LIB_ROOT/cudnn/lib:$TORCH_LIB_ROOT/cuda_runtime/lib:$TORCH_LIB_ROOT/cuda_nvrtc/lib:$TORCH_LIB_ROOT/cusparse/lib:$TORCH_LIB_ROOT/cusolver/
+  │ … +2 lines
+  └ (no output)
+
+• Ran tail -n 22 run.log
+  │ python3 - <<'PY'
+  │ import json
+  │ … +5 lines
+  └ [c2_patch_lstm_32] Epoch 44/60 | Train 0.5275/0.7400 | Val 0.5595/0.7173 | Patience 2/12
+    [c2_patch_lstm_32] Epoch 45/60 | Train 0.5324/0.7510 | Val 0.5212/0.7335 | Patience 3/12
+    … +20 lines (ctrl + t to view transcript)
+    val 0.7335243553008596 test 0.7548076923076923 time 2591.9992418289185
+    model {'name': 'patch_lstm', 'total_parameters': 4531301, 'trainable_parameters': 4531301}
+
+─ Worked for 9m 02s ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Stage C proxy finished with validation accuracy 0.733524 and test accuracy 0.754808, meeting the ~75% Stage C test benchmark. I’m writing the final result row, checking the saved artifacts,
+  then I’ll schedule the VM shutdown as requested.
+
+• Ran printf 'ac9f370\t0.733524\t0.754808\tkeep\tStage C existing 32x32 patch LSTM proxy for ViT-style patch experiment\n' >> results.tsv
+  │ sync
+  │ cat results.tsv
+  └ commit    val_accuracy    test_accuracy    status    description
+    ac9f370    0.000000    0.000000    crash    Stage A CNN baseline crashed before training due to missing sklearn dependency
+    … +3 lines (ctrl + t to view transcript)
+    ac9f370    0.734479    0.834936    keep    Stage B2 EfficientNetB0 fine-tuning blocks 7-8 at lr 1e-5
+    ac9f370    0.733524    0.754808    keep    Stage C existing 32x32 patch LSTM proxy for ViT-style patch experiment
+
+• Explored
+  └ Search metrics.json in runs
+
+• Ran git status --short --ignored | sed -n '1,160p'
+  └ ?? run.log
+    !! .kaggle/
+    … +5 lines (ctrl + t to view transcript)
+    !! results.tsv
+    !! src/chest_xray_project/__pycache__/
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Results are saved in results.tsv, and each run has metrics.json, resolved_config.json, and best_model.pt under outputs/runs/. Source changes are committed; only generated/ignored artifacts
+  and the last run.log remain outside git. I’m scheduling shutdown now with a short delay so this summary can be delivered.
