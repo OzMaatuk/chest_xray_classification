@@ -1,0 +1,318 @@
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 14/40 | Train 0.5564/0.7283 | Val 0.6450/0.7574 | Patience 2/10
+[a_custom_cnn] Epoch 15/40 | Train 0.5346/0.7419 | Val 0.6503/0.7096 | Patience 3/10
+[a_custom_cnn] Epoch 16/40 | Train 0.5318/0.7481 | Val 0.5920/0.7689 | Patience 4/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 14/40 | Train 0.5564/0.7283 | Val 0.6450/0.7574 | Patience 2/10
+[a_custom_cnn] Epoch 15/40 | Train 0.5346/0.7419 | Val 0.6503/0.7096 | Patience 3/10
+[a_custom_cnn] Epoch 16/40 | Train 0.5318/0.7481 | Val 0.5920/0.7689 | Patience 4/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 14/40 | Train 0.5564/0.7283 | Val 0.6450/0.7574 | Patience 2/10
+[a_custom_cnn] Epoch 15/40 | Train 0.5346/0.7419 | Val 0.6503/0.7096 | Patience 3/10
+[a_custom_cnn] Epoch 16/40 | Train 0.5318/0.7481 | Val 0.5920/0.7689 | Patience 4/10
+[a_custom_cnn] Epoch 17/40 | Train 0.5371/0.7419 | Val 0.5848/0.6915 | Patience 5/10
+[a_custom_cnn] Epoch 18/40 | Train 0.5328/0.7417 | Val 0.5023/0.7650 | Patience 0/10 *
+[a_custom_cnn] Epoch 19/40 | Train 0.5294/0.7470 | Val 0.5187/0.7832 | Patience 1/10
+[a_custom_cnn] Epoch 20/40 | Train 0.5378/0.7381 | Val 0.4952/0.7708 | Patience 0/10 *
+[a_custom_cnn] Epoch 21/40 | Train 0.5251/0.7534 | Val 0.5602/0.7851 | Patience 1/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 14/40 | Train 0.5564/0.7283 | Val 0.6450/0.7574 | Patience 2/10
+[a_custom_cnn] Epoch 15/40 | Train 0.5346/0.7419 | Val 0.6503/0.7096 | Patience 3/10
+[a_custom_cnn] Epoch 16/40 | Train 0.5318/0.7481 | Val 0.5920/0.7689 | Patience 4/10
+[a_custom_cnn] Epoch 17/40 | Train 0.5371/0.7419 | Val 0.5848/0.6915 | Patience 5/10
+[a_custom_cnn] Epoch 18/40 | Train 0.5328/0.7417 | Val 0.5023/0.7650 | Patience 0/10 *
+[a_custom_cnn] Epoch 19/40 | Train 0.5294/0.7470 | Val 0.5187/0.7832 | Patience 1/10
+[a_custom_cnn] Epoch 20/40 | Train 0.5378/0.7381 | Val 0.4952/0.7708 | Patience 0/10 *
+[a_custom_cnn] Epoch 21/40 | Train 0.5251/0.7534 | Val 0.5602/0.7851 | Patience 1/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 14/40 | Train 0.5564/0.7283 | Val 0.6450/0.7574 | Patience 2/10
+[a_custom_cnn] Epoch 15/40 | Train 0.5346/0.7419 | Val 0.6503/0.7096 | Patience 3/10
+[a_custom_cnn] Epoch 16/40 | Train 0.5318/0.7481 | Val 0.5920/0.7689 | Patience 4/10
+[a_custom_cnn] Epoch 17/40 | Train 0.5371/0.7419 | Val 0.5848/0.6915 | Patience 5/10
+[a_custom_cnn] Epoch 18/40 | Train 0.5328/0.7417 | Val 0.5023/0.7650 | Patience 0/10 *
+[a_custom_cnn] Epoch 19/40 | Train 0.5294/0.7470 | Val 0.5187/0.7832 | Patience 1/10
+[a_custom_cnn] Epoch 20/40 | Train 0.5378/0.7381 | Val 0.4952/0.7708 | Patience 0/10 *
+[a_custom_cnn] Epoch 21/40 | Train 0.5251/0.7534 | Val 0.5602/0.7851 | Patience 1/10
+[a_custom_cnn] Epoch 22/40 | Train 0.5306/0.7534 | Val 0.6145/0.6390 | Patience 2/10
+[a_custom_cnn] Epoch 23/40 | Train 0.5130/0.7584 | Val 0.4866/0.7966 | Patience 0/10 *
+[a_custom_cnn] Epoch 24/40 | Train 0.5008/0.7577 | Val 0.4655/0.7679 | Patience 0/10 *
+[a_custom_cnn] Epoch 25/40 | Train 0.5130/0.7551 | Val 0.7519/0.7211 | Patience 1/10
+[a_custom_cnn] Epoch 26/40 | Train 0.5293/0.7450 | Val 0.4953/0.7870 | Patience 2/10
+[a_custom_cnn] Epoch 27/40 | Train 0.5057/0.7568 | Val 0.5597/0.7765 | Patience 3/10
+[a_custom_cnn] Epoch 28/40 | Train 0.5105/0.7520 | Val 0.5440/0.7956 | Patience 4/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 14/40 | Train 0.5564/0.7283 | Val 0.6450/0.7574 | Patience 2/10
+[a_custom_cnn] Epoch 15/40 | Train 0.5346/0.7419 | Val 0.6503/0.7096 | Patience 3/10
+[a_custom_cnn] Epoch 16/40 | Train 0.5318/0.7481 | Val 0.5920/0.7689 | Patience 4/10
+[a_custom_cnn] Epoch 17/40 | Train 0.5371/0.7419 | Val 0.5848/0.6915 | Patience 5/10
+[a_custom_cnn] Epoch 18/40 | Train 0.5328/0.7417 | Val 0.5023/0.7650 | Patience 0/10 *
+[a_custom_cnn] Epoch 19/40 | Train 0.5294/0.7470 | Val 0.5187/0.7832 | Patience 1/10
+[a_custom_cnn] Epoch 20/40 | Train 0.5378/0.7381 | Val 0.4952/0.7708 | Patience 0/10 *
+[a_custom_cnn] Epoch 21/40 | Train 0.5251/0.7534 | Val 0.5602/0.7851 | Patience 1/10
+[a_custom_cnn] Epoch 22/40 | Train 0.5306/0.7534 | Val 0.6145/0.6390 | Patience 2/10
+[a_custom_cnn] Epoch 23/40 | Train 0.5130/0.7584 | Val 0.4866/0.7966 | Patience 0/10 *
+[a_custom_cnn] Epoch 24/40 | Train 0.5008/0.7577 | Val 0.4655/0.7679 | Patience 0/10 *
+[a_custom_cnn] Epoch 25/40 | Train 0.5130/0.7551 | Val 0.7519/0.7211 | Patience 1/10
+[a_custom_cnn] Epoch 26/40 | Train 0.5293/0.7450 | Val 0.4953/0.7870 | Patience 2/10
+[a_custom_cnn] Epoch 27/40 | Train 0.5057/0.7568 | Val 0.5597/0.7765 | Patience 3/10
+[a_custom_cnn] Epoch 28/40 | Train 0.5105/0.7520 | Val 0.5440/0.7956 | Patience 4/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 14/40 | Train 0.5564/0.7283 | Val 0.6450/0.7574 | Patience 2/10
+[a_custom_cnn] Epoch 15/40 | Train 0.5346/0.7419 | Val 0.6503/0.7096 | Patience 3/10
+[a_custom_cnn] Epoch 16/40 | Train 0.5318/0.7481 | Val 0.5920/0.7689 | Patience 4/10
+[a_custom_cnn] Epoch 17/40 | Train 0.5371/0.7419 | Val 0.5848/0.6915 | Patience 5/10
+[a_custom_cnn] Epoch 18/40 | Train 0.5328/0.7417 | Val 0.5023/0.7650 | Patience 0/10 *
+[a_custom_cnn] Epoch 19/40 | Train 0.5294/0.7470 | Val 0.5187/0.7832 | Patience 1/10
+[a_custom_cnn] Epoch 20/40 | Train 0.5378/0.7381 | Val 0.4952/0.7708 | Patience 0/10 *
+[a_custom_cnn] Epoch 21/40 | Train 0.5251/0.7534 | Val 0.5602/0.7851 | Patience 1/10
+[a_custom_cnn] Epoch 22/40 | Train 0.5306/0.7534 | Val 0.6145/0.6390 | Patience 2/10
+[a_custom_cnn] Epoch 23/40 | Train 0.5130/0.7584 | Val 0.4866/0.7966 | Patience 0/10 *
+[a_custom_cnn] Epoch 24/40 | Train 0.5008/0.7577 | Val 0.4655/0.7679 | Patience 0/10 *
+[a_custom_cnn] Epoch 25/40 | Train 0.5130/0.7551 | Val 0.7519/0.7211 | Patience 1/10
+[a_custom_cnn] Epoch 26/40 | Train 0.5293/0.7450 | Val 0.4953/0.7870 | Patience 2/10
+[a_custom_cnn] Epoch 27/40 | Train 0.5057/0.7568 | Val 0.5597/0.7765 | Patience 3/10
+[a_custom_cnn] Epoch 28/40 | Train 0.5105/0.7520 | Val 0.5440/0.7956 | Patience 4/10
+[a_custom_cnn] Epoch 29/40 | Train 0.4946/0.7665 | Val 0.5217/0.7937 | Patience 5/10
+[a_custom_cnn] Epoch 30/40 | Train 0.5070/0.7572 | Val 0.5316/0.7784 | Patience 6/10
+[a_custom_cnn] Epoch 31/40 | Train 0.5024/0.7584 | Val 0.7719/0.7221 | Patience 7/10
+[a_custom_cnn] Epoch 32/40 | Train 0.4939/0.7608 | Val 0.9498/0.5798 | Patience 8/10
+[a_custom_cnn] Epoch 33/40 | Train 0.5032/0.7618 | Val 0.4980/0.7851 | Patience 9/10
+[a_custom_cnn] Epoch 34/40 | Train 0.5096/0.7577 | Val 0.5696/0.7001 | Patience 10/10
+[a_custom_cnn] Epoch 01/40 | Train 0.8789/0.4913 | Val 0.7673/0.4632 | Patience 0/10 *
+[a_custom_cnn] Epoch 02/40 | Train 0.7602/0.5508 | Val 0.7074/0.7049 | Patience 0/10 *
+[a_custom_cnn] Epoch 03/40 | Train 0.6979/0.6088 | Val 0.8596/0.6676 | Patience 1/10
+[a_custom_cnn] Epoch 04/40 | Train 0.6724/0.6358 | Val 0.7363/0.6428 | Patience 2/10
+[a_custom_cnn] Epoch 05/40 | Train 0.6580/0.6585 | Val 0.8263/0.4222 | Patience 3/10
+[a_custom_cnn] Epoch 06/40 | Train 0.6088/0.6906 | Val 0.5560/0.7631 | Patience 0/10 *
+[a_custom_cnn] Epoch 07/40 | Train 0.6094/0.6956 | Val 0.7745/0.7049 | Patience 1/10
+[a_custom_cnn] Epoch 08/40 | Train 0.6023/0.6925 | Val 0.8969/0.6648 | Patience 2/10
+[a_custom_cnn] Epoch 09/40 | Train 0.5813/0.7109 | Val 0.9765/0.6380 | Patience 3/10
+[a_custom_cnn] Epoch 10/40 | Train 0.5771/0.7128 | Val 1.0999/0.5807 | Patience 4/10
+[a_custom_cnn] Epoch 11/40 | Train 0.5527/0.7288 | Val 0.5440/0.7775 | Patience 0/10 *
+[a_custom_cnn] Epoch 12/40 | Train 0.5652/0.7293 | Val 0.5174/0.7603 | Patience 0/10 *
+[a_custom_cnn] Epoch 13/40 | Train 0.5725/0.7209 | Val 0.7561/0.5893 | Patience 1/10
+[a_custom_cnn] Epoch 14/40 | Train 0.5564/0.7283 | Val 0.6450/0.7574 | Patience 2/10
+[a_custom_cnn] Epoch 15/40 | Train 0.5346/0.7419 | Val 0.6503/0.7096 | Patience 3/10
+[a_custom_cnn] Epoch 16/40 | Train 0.5318/0.7481 | Val 0.5920/0.7689 | Patience 4/10
+[a_custom_cnn] Epoch 17/40 | Train 0.5371/0.7419 | Val 0.5848/0.6915 | Patience 5/10
+[a_custom_cnn] Epoch 18/40 | Train 0.5328/0.7417 | Val 0.5023/0.7650 | Patience 0/10 *
+[a_custom_cnn] Epoch 19/40 | Train 0.5294/0.7470 | Val 0.5187/0.7832 | Patience 1/10
+[a_custom_cnn] Epoch 20/40 | Train 0.5378/0.7381 | Val 0.4952/0.7708 | Patience 0/10 *
+[a_custom_cnn] Epoch 21/40 | Train 0.5251/0.7534 | Val 0.5602/0.7851 | Patience 1/10
+[a_custom_cnn] Epoch 22/40 | Train 0.5306/0.7534 | Val 0.6145/0.6390 | Patience 2/10
+[a_custom_cnn] Epoch 23/40 | Train 0.5130/0.7584 | Val 0.4866/0.7966 | Patience 0/10 *
+[a_custom_cnn] Epoch 24/40 | Train 0.5008/0.7577 | Val 0.4655/0.7679 | Patience 0/10 *
+[a_custom_cnn] Epoch 25/40 | Train 0.5130/0.7551 | Val 0.7519/0.7211 | Patience 1/10
+[a_custom_cnn] Epoch 26/40 | Train 0.5293/0.7450 | Val 0.4953/0.7870 | Patience 2/10
+[a_custom_cnn] Epoch 27/40 | Train 0.5057/0.7568 | Val 0.5597/0.7765 | Patience 3/10
+[a_custom_cnn] Epoch 28/40 | Train 0.5105/0.7520 | Val 0.5440/0.7956 | Patience 4/10
+[a_custom_cnn] Epoch 29/40 | Train 0.4946/0.7665 | Val 0.5217/0.7937 | Patience 5/10
+[a_custom_cnn] Epoch 30/40 | Train 0.5070/0.7572 | Val 0.5316/0.7784 | Patience 6/10
+[a_custom_cnn] Epoch 31/40 | Train 0.5024/0.7584 | Val 0.7719/0.7221 | Patience 7/10
+[a_custom_cnn] Epoch 32/40 | Train 0.4939/0.7608 | Val 0.9498/0.5798 | Patience 8/10
+[a_custom_cnn] Epoch 33/40 | Train 0.5032/0.7618 | Val 0.4980/0.7851 | Patience 9/10
+[a_custom_cnn] Epoch 34/40 | Train 0.5096/0.7577 | Val 0.5696/0.7001 | Patience 10/10
+[a_custom_cnn] Epoch 26/40 | Train 0.5293/0.7450 | Val 0.4953/0.7870 | Patience 2/10
+[a_custom_cnn] Epoch 27/40 | Train 0.5057/0.7568 | Val 0.5597/0.7765 | Patience 3/10
+[a_custom_cnn] Epoch 28/40 | Train 0.5105/0.7520 | Val 0.5440/0.7956 | Patience 4/10
+[a_custom_cnn] Epoch 29/40 | Train 0.4946/0.7665 | Val 0.5217/0.7937 | Patience 5/10
+[a_custom_cnn] Epoch 30/40 | Train 0.5070/0.7572 | Val 0.5316/0.7784 | Patience 6/10
+[a_custom_cnn] Epoch 31/40 | Train 0.5024/0.7584 | Val 0.7719/0.7221 | Patience 7/10
+[a_custom_cnn] Epoch 32/40 | Train 0.4939/0.7608 | Val 0.9498/0.5798 | Patience 8/10
+[a_custom_cnn] Epoch 33/40 | Train 0.5032/0.7618 | Val 0.4980/0.7851 | Patience 9/10
+[a_custom_cnn] Epoch 34/40 | Train 0.5096/0.7577 | Val 0.5696/0.7001 | Patience 10/10
+[a_custom_cnn] Epoch 26/40 | Train 0.5293/0.7450 | Val 0.4953/0.7870 | Patience 2/10
+[a_custom_cnn] Epoch 27/40 | Train 0.5057/0.7568 | Val 0.5597/0.7765 | Patience 3/10
+[a_custom_cnn] Epoch 28/40 | Train 0.5105/0.7520 | Val 0.5440/0.7956 | Patience 4/10
+[a_custom_cnn] Epoch 29/40 | Train 0.4946/0.7665 | Val 0.5217/0.7937 | Patience 5/10
+[a_custom_cnn] Epoch 30/40 | Train 0.5070/0.7572 | Val 0.5316/0.7784 | Patience 6/10
+[a_custom_cnn] Epoch 31/40 | Train 0.5024/0.7584 | Val 0.7719/0.7221 | Patience 7/10
+[a_custom_cnn] Epoch 32/40 | Train 0.4939/0.7608 | Val 0.9498/0.5798 | Patience 8/10
+[a_custom_cnn] Epoch 33/40 | Train 0.5032/0.7618 | Val 0.4980/0.7851 | Patience 9/10
+[a_custom_cnn] Epoch 34/40 | Train 0.5096/0.7577 | Val 0.5696/0.7001 | Patience 10/10
