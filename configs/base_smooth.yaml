@@ -1,0 +1,47 @@
+name: smooth_base_experiment
+seed: 42
+
+data:
+  dataset_root: data/raw/chest_xray
+  train_splits: [train, val]
+  test_splits: [test]
+  image_size: 224
+  batch_size: 32
+  num_workers: 2
+  val_size: 0.20
+  viral_weight_multiplier: 1.0
+  augmentation_profile: gentle
+  use_weighted_sampler: true
+  use_class_weights: false
+
+optimizer:
+  name: adam
+  lr: 0.0002
+  weight_decay: 0.0001
+
+training:
+  epochs: 40
+  patience: 10
+  device: auto
+  grad_clip_norm: 1.0
+  scheduler: reduce_on_plateau
+  scheduler_patience: 3
+  scheduler_factor: 0.5
+  min_lr: 0.000001
+
+model:
+  name: cnn
+  num_classes: 3
+  freeze_backbone: false
+  finetune_blocks: []
+  patch_size: 16
+  embed_dim: 256
+  hidden_size: 512
+  num_layers: 2
+  dropout: 0.2
+
+output:
+  root_dir: outputs/runs
+  experiment_name: smooth_base_experiment
+  save_figures: true
+  save_checkpoints: true

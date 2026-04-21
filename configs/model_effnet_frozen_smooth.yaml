@@ -1,0 +1,11 @@
+base_config: base_smooth.yaml
+name: b1_frozen_efficientnet_smooth
+
+training:
+  epochs: 40
+  patience: 10
+
+model:
+  name: efficientnet
+  freeze_backbone: true
+  finetune_blocks: []

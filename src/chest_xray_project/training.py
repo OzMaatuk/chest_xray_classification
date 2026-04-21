@@ -17,7 +17,7 @@ class EvaluationResult:
     labels: list[int]
 
 
-def train_one_epoch(model, loader, criterion, optimizer, device: str) -> tuple[float, float]:
+def train_one_epoch(model, loader, criterion, optimizer, device: str, grad_clip_norm: float | None = None) -> tuple[float, float]:
     model.train()
     running_loss = 0.0
     correct = 0
@@ -31,6 +31,8 @@ def train_one_epoch(model, loader, criterion, optimizer, device: str) -> tuple[f
         outputs = model(images)
         loss = criterion(outputs, labels)
         loss.backward()
+        if grad_clip_norm is not None:
+            torch.nn.utils.clip_grad_norm_(model.parameters(), grad_clip_norm)
         optimizer.step()
 
         running_loss += loss.item() * images.size(0)
@@ -82,15 +84,44 @@ def build_optimizer(model, optimizer_config):
     )
 
 
-def fit(model, train_loader, val_loader, criterion, optimizer, device: str, epochs: int, patience: int, model_name: str):
+def build_scheduler(optimizer, training_config):
+    if training_config.scheduler == "none":
+        return None
+    if training_config.scheduler != "reduce_on_plateau":
+        raise ValueError(f"Unsupported scheduler: {training_config.scheduler}")
+
+    return torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer,
+        mode="min",
+        factor=training_config.scheduler_factor,
+        patience=training_config.scheduler_patience,
+        min_lr=training_config.min_lr,
+    )
+
+
+def _current_lr(optimizer) -> float:
+    return optimizer.param_groups[0]["lr"]
+
+
+def fit(model, train_loader, val_loader, criterion, optimizer, training_config, model_name: str):
     history = {"train_loss": [], "val_loss": [], "train_acc": [], "val_acc": []}
     best_val_loss = float("inf")
     best_state = copy.deepcopy(model.state_dict())
     wait = 0
+    scheduler = build_scheduler(optimizer, training_config)
 
-    for epoch in range(1, epochs + 1):
-        train_loss, train_acc = train_one_epoch(model, train_loader, criterion, optimizer, device)
-        validation = evaluate(model, val_loader, criterion, device)
+    for epoch in range(1, training_config.epochs + 1):
+        train_loss, train_acc = train_one_epoch(
+            model,
+            train_loader,
+            criterion,
+            optimizer,
+            training_config.device,
+            training_config.grad_clip_norm,
+        )
+        validation = evaluate(model, val_loader, criterion, training_config.device)
+        if scheduler is not None:
+            scheduler.step(validation.loss)
 
         history["train_loss"].append(train_loss)
         history["val_loss"].append(validation.loss)
@@ -107,13 +138,14 @@ def fit(model, train_loader, val_loader, criterion, optimizer, device: str, epoc
 
         marker = " *" if improved else ""
         print(
-            f"[{model_name}] Epoch {epoch:02d}/{epochs} | "
+            f"[{model_name}] Epoch {epoch:02d}/{training_config.epochs} | "
             f"Train {train_loss:.4f}/{train_acc:.4f} | "
             f"Val {validation.loss:.4f}/{validation.accuracy:.4f} | "
-            f"Patience {wait}/{patience}{marker}"
+            f"LR {_current_lr(optimizer):.2e} | "
+            f"Patience {wait}/{training_config.patience}{marker}"
         )
 
-        if wait >= patience:
+        if wait >= training_config.patience:
             print(f"Early stopping at epoch {epoch}.")
             break
 
@@ -146,9 +178,7 @@ def run_training(config, model, datamodule, class_names: list[str], output_dir):
         val_loader=datamodule.val_loader,
         criterion=datamodule.criterion,
         optimizer=optimizer,
-        device=config.training.device,
-        epochs=config.training.epochs,
-        patience=config.training.patience,
+        training_config=config.training,
         model_name=config.name,
     )
     elapsed = time.time() - start_time
@@ -162,4 +192,3 @@ def run_training(config, model, datamodule, class_names: list[str], output_dir):
         "validation": summarize_evaluation(val_evaluation, class_names),
         "test": summarize_evaluation(test_evaluation, class_names),
     }
-

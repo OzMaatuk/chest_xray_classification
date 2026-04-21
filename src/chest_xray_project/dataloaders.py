@@ -5,11 +5,23 @@ from dataclasses import dataclass
 import torch
 from PIL import Image
 from torch import nn
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import DataLoader, Dataset, WeightedRandomSampler
 
 from chest_xray_project.config import DataConfig
+from chest_xray_project.constants import CLASS_NAMES
 from chest_xray_project.data import DatasetBundle, build_splits, compute_class_weights
 from chest_xray_project.transforms import build_eval_transforms, build_train_transforms
+
+
+def _build_weighted_sampler(labels: list[int]) -> WeightedRandomSampler:
+    label_tensor = torch.tensor(labels)
+    class_counts = torch.bincount(label_tensor, minlength=len(CLASS_NAMES)).float()
+    sample_weights = 1.0 / class_counts[label_tensor]
+    return WeightedRandomSampler(
+        weights=sample_weights,
+        num_samples=len(sample_weights),
+        replacement=True,
+    )
 
 
 class ChestXrayDataset(Dataset):
@@ -50,16 +62,18 @@ def build_dataloaders(config: DataConfig, device: str) -> DataModule:
     train_dataset = ChestXrayDataset(
         splits.train.paths,
         splits.train.labels,
-        build_train_transforms(config.image_size),
+        build_train_transforms(config.image_size, config.augmentation_profile),
     )
     eval_transform = build_eval_transforms(config.image_size)
     val_dataset = ChestXrayDataset(splits.val.paths, splits.val.labels, eval_transform)
     test_dataset = ChestXrayDataset(splits.test.paths, splits.test.labels, eval_transform)
 
+    train_sampler = _build_weighted_sampler(splits.train.labels) if config.use_weighted_sampler else None
     train_loader = DataLoader(
         train_dataset,
         batch_size=config.batch_size,
-        shuffle=True,
+        shuffle=train_sampler is None,
+        sampler=train_sampler,
         num_workers=config.num_workers,
         pin_memory=device == "cuda",
     )
@@ -79,7 +93,7 @@ def build_dataloaders(config: DataConfig, device: str) -> DataModule:
     )
 
     weights = compute_class_weights(splits.train.labels, config.viral_weight_multiplier)
-    weight_tensor = torch.tensor(weights, dtype=torch.float32, device=device)
+    weight_tensor = torch.tensor(weights, dtype=torch.float32, device=device) if config.use_class_weights else None
     criterion = nn.CrossEntropyLoss(weight=weight_tensor)
 
     return DataModule(
@@ -90,4 +104,3 @@ def build_dataloaders(config: DataConfig, device: str) -> DataModule:
         criterion=criterion,
         class_weights=weights.tolist(),
     )
-

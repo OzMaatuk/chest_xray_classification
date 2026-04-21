@@ -1,0 +1,10 @@
+base_config: base_smooth.yaml
+name: c2_patch_lstm_32_smooth
+
+training:
+  epochs: 60
+  patience: 12
+
+model:
+  name: patch_lstm
+  patch_size: 32

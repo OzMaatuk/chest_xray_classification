@@ -1,0 +1,14 @@
+base_config: base_smooth.yaml
+name: a_custom_cnn_smooth_no_sampler
+
+data:
+  use_weighted_sampler: false
+  use_class_weights: true
+  viral_weight_multiplier: 1.0
+
+training:
+  epochs: 40
+  patience: 10
+
+model:
+  name: cnn

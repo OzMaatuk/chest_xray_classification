@@ -18,6 +18,9 @@ class DataConfig:
     val_size: float = 0.20
     seed: int = 42
     viral_weight_multiplier: float = 1.3
+    augmentation_profile: str = "standard"
+    use_weighted_sampler: bool = False
+    use_class_weights: bool = True
 
 
 @dataclass
@@ -32,6 +35,11 @@ class TrainingConfig:
     epochs: int = 30
     patience: int = 7
     device: str = "auto"
+    grad_clip_norm: float | None = None
+    scheduler: str = "none"
+    scheduler_patience: int = 3
+    scheduler_factor: float = 0.5
+    min_lr: float = 1e-6
 
 
 @dataclass
